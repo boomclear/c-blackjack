@@ -33,7 +33,7 @@ namespace BlackJack
             bool LowAce = false;
             foreach (Card card in Hand)
             {
-                if ((card.face.Equals('A')) && (card.value != 11) && (HandValue > 21))
+                if ((card.face.Equals('A')) && (card.value == 11) && (HandValue > 21))
                 {
                     card.value = 1;
                     LowAce = true;
